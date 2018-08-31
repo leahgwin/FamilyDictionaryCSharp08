@@ -40,7 +40,7 @@ namespace family_dictionary
 
             foreach (var member in myFamily)
             {
-                Console.WriteLine($"{member.Value["name"]} is my {member.Key}, and {member.Value["pronoun"]} are {member.Value["age"]} years old.");
+                Console.WriteLine($"{member.Value["name"]} is my {member.Key}, and {member.Value["pronoun"]} is {member.Value["age"]} years old.");
             };
         }
 
