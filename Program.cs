@@ -13,24 +13,36 @@ namespace family_dictionary
 
             myFamily.Add("sister", new Dictionary<string, string>(){
             {"name", "Ansley"},
-            {"age", "21"}
+            {"age", "21"},
+            {"pronoun", "she"}
             });
             myFamily.Add("mom", new Dictionary<string, string>(){
             {"name", "Davina"},
-            {"age", "52"}
+            {"age", "52"},
+            {"pronoun", "she"}
             });
             myFamily.Add("dad", new Dictionary<string, string>(){
             {"name", "Vern"},
-            {"age", "52"}
+            {"age", "52"},
+            {"pronoun", "he"}
+
             });
             myFamily.Add("fiance", new Dictionary<string, string>(){
             {"name", "Benjamin"},
-            {"age", "26"}
+            {"age", "26"},
+            {"pronoun", "he"}
             });
             myFamily.Add("dog", new Dictionary<string, string>(){
             {"name", "Harper"},
-            {"age", "1.5"}
+            {"age", "1.5"},
+            {"pronoun", "she"}
             });
+
+            foreach (var member in myFamily)
+            {
+                Console.WriteLine($"{member.Value["name"]} is my {member.Key}, and {member.Value["pronoun"]} are {member.Value["age"]} years old.");
+            };
         }
+
     }
 }
